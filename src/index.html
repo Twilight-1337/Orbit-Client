@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orbit Client</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark">O</span>
+        <h1>Orbit Client</h1>
+      </div>
+      <span id="app-version" class="muted"></span>
+    </header>
+
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <button class="tab is-active" type="button" data-view="accounts">Accounts</button>
+      <button class="tab" type="button" data-view="instances">Instances</button>
+      <button class="tab" type="button" data-view="mods">Mods</button>
+      <button class="tab" type="button" data-view="logs">Logs</button>
+    </nav>
+
+    <main id="view" class="view" aria-live="polite"></main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
